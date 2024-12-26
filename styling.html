@@ -1,0 +1,75 @@
+<!-- Question 3: Styling with JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with JavaScript</title>
+    <script src="styling.js" defer></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+    
+        #box {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: slateblue;
+            color: white;
+            border: 3px solid green;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        #hiddenBox {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            display: none;
+            margin-top: 20px;
+        }
+      </style>
+</head>
+<body>
+    <!-- Task 1: Create an HTML structure with at least 5 elements that will be styled dynamically -->
+    <h2 id="heading">Styling with JavaScript</h2>
+
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+
+    <button id="toggleButton" onclick="toggleBox()">Click for Suprise!</button>
+
+    <button id="changeSizeButton" onclick="changeSize()">Click to Resize Box!</button>
+
+    <div id="hiddenBox">Suprise!</div>
+
+    <p>Type Something:</p>
+
+    <input type="text" onkeydown="myFunction()">
+
+    <p id="popUpMessage"></p>
+    
+</body>
+</html>
